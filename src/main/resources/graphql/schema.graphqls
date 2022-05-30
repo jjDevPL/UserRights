@@ -1,0 +1,18 @@
+type Query {
+    userDefault: UserRights
+    greeting: String
+
+}
+#it is like updateds commands
+type Mutation {
+    newRights(input : String!) : UserRights
+}
+
+type UserRights {
+    id: Int
+    name: String
+}
+
+input UserRightsInput {
+    name: String!
+}
